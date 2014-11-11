@@ -27,3 +27,7 @@
 <% else %>
   <%= render 'pages/home' unless user_signed_in? %>
 <% end %>
+
+<div class="center">
+<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
